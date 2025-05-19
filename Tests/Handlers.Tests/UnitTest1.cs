@@ -9,7 +9,6 @@ public class CreateTransactionHandlerTests
     [Fact]
     public async Task Handle_ShouldReturnTransaction_WhenTransactionIsCreated()
     {
-        // Arrange
         Transaction createdTransaction = null!;
         var mockRepo = new Mock<ITransactionRepository>();
         mockRepo.Setup(r => r.CreateTransactionAsync(It.IsAny<Transaction>()))
@@ -27,10 +26,8 @@ public class CreateTransactionHandlerTests
             100
         );
 
-        // Act
         var result = await handler.Handle(command);
 
-        // Assert
         Assert.NotNull(createdTransaction);
         Assert.Equal(createdTransaction.Id, result);
         mockRepo.Verify(r => r.CreateTransactionAsync(It.IsAny<Transaction>()), Times.Once);
