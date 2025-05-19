@@ -1,0 +1,61 @@
+# Build results
+bin/
+obj/
+out/
+
+# User-specific files
+.vs/
+.vscode/
+*.user
+*.suo
+
+# Rider
+.idea/
+*.sln.iml
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Test results
+TestResults/
+*.coverage
+*.coveragexml
+
+# NUGET packages
+*.nupkg
+packages/
+.nuget/
+
+# Dotnet tools
+tools/
+
+# Publish output
+publish/
+artifacts/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Docker
+**/docker-compose.override.yml
+
+# Exclude secrets but NOT general config
+secrets.json
+
+# Python virtual environments (por si usas notebooks)
+venv/
+ENV/
+env/
+.venv/
+
+# Node modules (por si usas algún frontend)
+node_modules/
+
+# Exclude migrations snapshots (opcional)
+**/Migrations/*Snapshot.cs
+
+# No excluyas archivos de configuración como appsettings.json, launchSettings.json, docker-compose-yaml, etc.
