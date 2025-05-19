@@ -48,9 +48,7 @@ public class Worker : BackgroundService
 
                 if (transaction == null) continue;
 
-                // Consulta el acumulado diario real desde la API principal
                 var httpClient = _httpClientFactory.CreateClient();
-                // Cambia la URL y puerto según tu docker-compose (ejemplo: "api" es el nombre del servicio)
                 var url = $"http://localhost:5012/api/transactions/daily-total/{transaction.SourceAccountId}";
                 decimal dailyTotal = 0;
                 try
