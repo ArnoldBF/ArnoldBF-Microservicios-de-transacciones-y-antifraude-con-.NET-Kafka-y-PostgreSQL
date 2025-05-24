@@ -6,7 +6,7 @@ Proyecto de ejemplo para gestión de transacciones y validación anti-fraude usa
 
 ## Requisitos
 
--   [.NET 8 SDK](https://dotnet.microsoft.com/download)
+-   [.NET 9 SDK](https://dotnet.microsoft.com/download)
 -   [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 -   [pgAdmin](https://www.pgadmin.org/download/) (opcional, para ver la base de datos)
 -   [Postman](https://www.postman.com/) o curl (opcional, para probar endpoints)
